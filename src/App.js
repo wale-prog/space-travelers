@@ -1,6 +1,6 @@
-/* eslint-disable*/
 import './App.css';
 import Header from './components/Header';
+// import { Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
