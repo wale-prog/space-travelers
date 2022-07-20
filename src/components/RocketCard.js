@@ -4,14 +4,13 @@ import { useDispatch } from 'react-redux';
 import { rocketActions } from '../Redux/RocketSlice';
 
 const RocketCard = ({ data: rocket }) => {
-  // const rockets = useSelector((state) => state.rocket.isReserved);
   const dispatch = useDispatch();
   const {
-    rocketName, description, flickrImages,
+    id, rocketName, description, flickrImages,
   } = rocket;
 
   const clickHandler = () => {
-    dispatch(rocketActions.reseverd({ rocket }));
+    dispatch(rocketActions.reseverd(id));
   };
 
   return (

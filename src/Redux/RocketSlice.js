@@ -11,11 +11,17 @@ export const getRockets = createAsyncThunk(
       rocketName: item.rocket_name,
       description: item.description,
       flickrImages: item.flickr_images[0],
-      isReserved: false,
     }));
     return data;
   },
 );
+
+// {
+//   if (item.id === action.payload.id) {
+//     return { ...item, reserved: true };
+//   }
+//   return item;
+// };
 
 const initialState = [];
 const rocketSlice = createSlice({
@@ -23,12 +29,10 @@ const rocketSlice = createSlice({
   initialState,
   reducers: {
     reseverd(state, action) {
-      return state.map((item) => {
-        if (item.id === action.payload.rocket.id) {
-          return item.isReserved === !item.isReserved;
-        }
-        return item;
+      const newstate = state.map((item) => {
+        if (item.id !== action.payload) return item; return { ...item, reseverd: true };
       });
+      return newstate;
     },
   },
   extraReducers: {
