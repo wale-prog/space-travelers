@@ -10,7 +10,28 @@ const RocketCard = ({ data: rocket }) => {
   } = rocket;
 
   const clickHandler = () => {
-    dispatch(rocketActions.reseverd(id));
+    if (rocket.reserved) {
+      dispatch(rocketActions.cancelReserve(id));
+    } else {
+      dispatch(rocketActions.reserved(id));
+    }
+  };
+
+  const btnStyle = () => {
+    const style = {
+      padding: '8px',
+      marginTop: '20px',
+      backgroundColor: 'rgb(0 123 255)',
+      border: 'none',
+      color: '#fff',
+      borderRadius: '4px',
+    };
+    if (rocket.reserved) {
+      style.color = 'rgb(133 139 146';
+      style.backgroundColor = '#fff';
+      style.border = '1px rgb(133 139 146) solid';
+    }
+    return style;
   };
 
   return (
@@ -18,8 +39,19 @@ const RocketCard = ({ data: rocket }) => {
       <img style={{ width: '200px' }} src={flickrImages} alt="" />
       <div>
         <h3>{rocketName}</h3>
-        <p>{description}</p>
-        <button className="rocket-btn" onClick={clickHandler} type="submit">Reserve Rocket</button>
+        <div className="para">
+          {rocket.reserved && <p className="reserved">Reserved</p>}
+          <p className="desc">{description}</p>
+        </div>
+        {!rocket.reserved ? (
+          <button
+            style={btnStyle()}
+            onClick={clickHandler}
+            type="submit"
+          >
+            Reserve Rocket
+          </button>
+        ) : <button style={btnStyle()} onClick={clickHandler} type="submit">Cancel Reservation</button>}
       </div>
     </div>
   );

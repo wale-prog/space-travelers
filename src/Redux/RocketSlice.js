@@ -16,21 +16,20 @@ export const getRockets = createAsyncThunk(
   },
 );
 
-// {
-//   if (item.id === action.payload.id) {
-//     return { ...item, reserved: true };
-//   }
-//   return item;
-// };
-
 const initialState = [];
 const rocketSlice = createSlice({
   name: 'Rocket',
   initialState,
   reducers: {
-    reseverd(state, action) {
+    reserved(state, action) {
       const newstate = state.map((item) => {
-        if (item.id !== action.payload) return item; return { ...item, reseverd: true };
+        if (item.id !== action.payload) return item; return { ...item, reserved: true };
+      });
+      return newstate;
+    },
+    cancelReserve(state, action) {
+      const newstate = state.map((item) => {
+        if (item.id !== action.payload) return item; return { ...item, reserved: false };
       });
       return newstate;
     },
