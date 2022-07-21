@@ -10,7 +10,7 @@ export const getRockets = createAsyncThunk(
       id: item.id,
       rocketName: item.rocket_name,
       description: item.description,
-      flickrImages: item.flickr_images[0],
+      flickr_images: item.flickr_images[0],
       isReserved: false,
     }));
     return data;
@@ -24,7 +24,7 @@ const rocketSlice = createSlice({
   reducers: {
     reseverd(state, action) {
       return state.map((item) => {
-        if (item.id === action.payload.rocket.id) {
+        if (item.id === action.payload.id) {
           return item.isReserved === !item.isReserved;
         }
         return item;
