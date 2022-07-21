@@ -14,7 +14,7 @@ const RocketCard = ({ data: rocket }) => {
   };
   return (
     <div className="rocket-card">
-      <img style={{ width: '200px' }} src={flickr_images} alt="" />
+      <img style={{ width: '200px' }} src={flickrImages} alt="" />
       <div>
         <h3>{rocketName}</h3>
         <p>{description}</p>
