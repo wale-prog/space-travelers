@@ -6,7 +6,6 @@ import { rocketActions } from '../Redux/RocketSlice';
 const RocketCard = ({ data: rocket }) => {
   // const rockets = useSelector((state) => state.rocket.isReserved);
   const dispatch = useDispatch();
-
   const clickHandler = (event) => {
     event.preventDefault();
     dispatch(rocketActions.reseverd(rocket));
