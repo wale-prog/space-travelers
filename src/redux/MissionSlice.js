@@ -29,6 +29,13 @@ const missionSlice = createSlice({
       });
       return nextstate;
     },
+    leaveMission(state, action) {
+      const nextstate = state.map((item) => {
+        if (item.id !== action.payload) return item;
+        return { ...item, joined: false };
+      });
+      return nextstate;
+    },
   },
   extraReducers: {
     [getMissions.fulfilled]: ((state, action) => [...state, ...action.payload]),
