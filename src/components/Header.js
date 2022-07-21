@@ -11,7 +11,6 @@ const Header = () => (
         <h2>Space Travelers &apos; Hub</h2>
       </div>
       <Nav />
-
     </nav>
   </div>
 );
