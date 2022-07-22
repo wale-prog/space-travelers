@@ -6,8 +6,7 @@ import './MissionList.css';
 
 const MissionList = ({ list: mission }) => {
   const dispatch = useDispatch();
-
-  const handliClick = () => {
+  
     if (mission.joined) {
       dispatch(missionActions.leaveMission(mission.id));
     } else {
@@ -26,6 +25,7 @@ const MissionList = ({ list: mission }) => {
         <div>
           <button className="join-btn" type="submit" onClick={handliClick}>Join Mission</button>
         </div>
+
       </div>
 
     </div>

@@ -13,7 +13,6 @@ const Mission = () => {
         <h3 className="title-desc">Description</h3>
         <h3 className="title-status">Status</h3>
       </div>
-
       {missions.map((mission) => (
         <MissionList
           key={mission.id}
