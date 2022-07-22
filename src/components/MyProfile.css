@@ -1,4 +1,4 @@
-.main-container {
+.main-containers {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -8,11 +8,11 @@
   border-top: 2px solid rgb(201, 193, 193);
 }
 
-.main {
+.main-con {
   width: 40%;
 }
 
-.main p {
+.main-con p {
   border-top: 1px solid rgb(201, 193, 193);
   padding: 20px;
 }

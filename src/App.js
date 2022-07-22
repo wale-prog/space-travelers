@@ -11,10 +11,10 @@ function App() {
 
       <Header />
       <Switch>
-        <Route>
-          <Mission exact path="/missions" />
+        <Route exact path="/missions">
+          <Mission />
         </Route>
-        <Route exact path="/MyProfile">
+        <Route exact path="/profile">
           <MyProfile />
         </Route>
         <Route path="/">

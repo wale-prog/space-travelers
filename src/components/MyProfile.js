@@ -2,24 +2,23 @@ import { useSelector } from 'react-redux';
 import './MyProfile.css';
 
 const MyProfile = () => {
-  const state = useSelector((state) => state.rocket);
-
-  const reservedRocket = state.filter((rocket) => rocket.reserved === true);
+  const missionState = useSelector((state) => state.mission);
+  const joinedMission = missionState.filter((mission) => mission.joined === true);
+  const rocketState = useSelector((state) => state.rocket);
+  const reservedRocket = rocketState.filter((rocket) => rocket.reserved === true);
 
   const style = () => ({
     border: '1px solid rgb(201, 193, 193)',
     marginTop: '20px',
   });
-
   return (
-    <div className="main-container">
-      <div className="main">
+    <div className="main-containers">
+      <div className="main-con">
         <h2>My Missions</h2>
         <div style={style()}>
-          <p>Telstar</p>
-          <p>SES</p>
-          <p>AsiaSat</p>
-          <p>ABS</p>
+          {joinedMission.map((item) => (
+            <p key={item.id}>{item.missionName}</p>
+          ))}
         </div>
       </div>
       <div className="main">
@@ -29,7 +28,6 @@ const MyProfile = () => {
             <p key={item.id}>{item.rocketName}</p>
           ))}
         </div>
-
       </div>
     </div>
   );
