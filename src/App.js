@@ -17,9 +17,6 @@ function App() {
         <Route exact path="/profile">
           <MyProfile />
         </Route>
-        <Route exact path="/MyProfile">
-          <MyProfile />
-        </Route>
         <Route path="/">
           <Rockets />
         </Route>

@@ -10,9 +10,9 @@ const Nav = () => {
   );
   return (
     <ul className="nav-items">
-      <li><NavLink style={style} activeStyle={{ textDecoration: 'underline' }} to="/Rockets">Rockets</NavLink></li>
-      <li><NavLink style={style} activeStyle={{ textDecoration: 'underline' }} to="/Missions">Missions</NavLink></li>
-      <li><NavLink style={style} activeStyle={{ textDecoration: 'underline' }} to="/MyProfile">My Profile</NavLink></li>
+      <li><NavLink style={style} activeStyle={{ textDecoration: 'underline' }} to="/rockets">Rockets</NavLink></li>
+      <li><NavLink style={style} activeStyle={{ textDecoration: 'underline' }} to="/missions">Missions</NavLink></li>
+      <li><NavLink style={style} activeStyle={{ textDecoration: 'underline' }} to="/profile">My Profile</NavLink></li>
     </ul>
   );
 };

@@ -1,7 +1,7 @@
 import propTypes from 'prop-types';
 import './RocketCard.css';
 import { useDispatch } from 'react-redux';
-import { rocketActions } from '../Redux/RocketSlice';
+import { rocketActions } from '../redux/RocketSlice';
 
 const RocketCard = ({ data: rocket }) => {
   const dispatch = useDispatch();

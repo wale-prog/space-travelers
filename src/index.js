@@ -5,12 +5,14 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from './Redux/index';
+import store from './redux/index';
 import { getRockets } from './redux/RocketSlice';
+import { getMissions } from './redux/MissionSlice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 store.dispatch(getRockets());
+store.dispatch(getMissions());
 
 root.render(
   <BrowserRouter>

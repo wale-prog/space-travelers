@@ -2,10 +2,10 @@ import { useSelector } from 'react-redux';
 import './MyProfile.css';
 
 const MyProfile = () => {
-  const state = useSelector((state) => state.missions);
-  const joinedMission = state.filter((mission) => mission.joined === true);
-  const state = useSelector((state) => state.rocket);
-  const reservedRocket = state.filter((rocket) => rocket.reserved === true);
+  const missionState = useSelector((state) => state.mission);
+  const joinedMission = missionState.filter((mission) => mission.joined === true);
+  const rocketState = useSelector((state) => state.rocket);
+  const reservedRocket = rocketState.filter((rocket) => rocket.reserved === true);
 
   const style = () => ({
     border: '1px solid rgb(201, 193, 193)',

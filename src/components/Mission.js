@@ -4,7 +4,7 @@ import MissionList from './MissionList';
 import './Mission.css';
 
 const Mission = () => {
-  const missions = useSelector((state) => state.missions);
+  const missions = useSelector((state) => state.mission);
 
   return (
     <div className="main">
