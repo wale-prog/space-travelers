@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './Redux/index';
-import { getMissions } from './Redux/MissionSlice';
+import { getMissions } from './redux/MissionSlice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,7 +17,6 @@ root.render(
       <App />
     </Provider>
   </BrowserRouter>,
-
 );
 
 // If you want to start measuring performance in your app, pass a function
