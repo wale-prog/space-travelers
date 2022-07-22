@@ -6,7 +6,8 @@ import './MissionList.css';
 
 const MissionList = ({ list: mission }) => {
   const dispatch = useDispatch();
-  
+
+  const handliClick = () => {
     if (mission.joined) {
       dispatch(missionActions.leaveMission(mission.id));
     } else {
