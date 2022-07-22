@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import React from 'react';
 import propTypes from 'prop-types';
-import { missionActions } from '../Redux/MissionSlice';
+import { missionActions } from '../redux/MissionSlice';
 import './MissionList.css';
 
 const MissionList = ({ list: mission }) => {
