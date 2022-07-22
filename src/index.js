@@ -6,11 +6,11 @@ import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './Redux/index';
-import { getMissions } from './redux/MissionSlice';
+import { getRockets } from './Redux/RocketSlice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-store.dispatch(getMissions());
+store.dispatch(getRockets());
 root.render(
   <BrowserRouter>
     <Provider store={store}>

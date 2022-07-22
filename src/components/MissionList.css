@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 .main-container {
   display: grid;
   grid-template-columns: 10% 66% 12% 12%;
@@ -9,12 +10,14 @@
   align-items: center;
   border: 1px solid #d8d8d8;
 }
+
 .desc {
   margin-left: 14px;
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
   padding: 2px;
 }
+
 .status {
   align-self: center;
   background-color: rgb(109 117 125);
@@ -25,6 +28,7 @@
   color: #fff;
   border-radius: 4px;
 }
+
 .join-btn {
   align-self: center;
   padding: 6px;
@@ -32,6 +36,7 @@
   border: 2px solid gray;
   color: gray;
 }
+
 .btn-div {
   display: flex;
   border-left: 1px solid #d8d8d8;
