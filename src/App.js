@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Switch>
         <Route>
-          <Mission exact path="/mission" />
+          <Mission exact path="/missions" />
         </Route>
         <Route exact path="/MyProfile">
           <MyProfile />
