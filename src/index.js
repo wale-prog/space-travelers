@@ -7,9 +7,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './Redux/index';
 import { getMissions } from './Redux/MissionSlice';
+import { getRockets } from './Redux/RocketSlice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+store.dispatch(getRockets())
 store.dispatch(getMissions());
 root.render(
   <BrowserRouter>
@@ -17,7 +19,6 @@ root.render(
       <App />
     </Provider>
   </BrowserRouter>,
-
 );
 
 // If you want to start measuring performance in your app, pass a function
