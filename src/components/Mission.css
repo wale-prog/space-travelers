@@ -1,9 +1,11 @@
 .mission-title {
   display: grid;
-  grid-template-columns: 11.5% 64.5% 12% 8%;
+  grid-template-columns: 10.9% 65% 12.09% 8%;
   grid-template-rows: auto;
   align-items: center;
   border: 1px solid #d8d8d8;
+  height: 48px;
+  padding-left: 4px;
 }
 
 .main {
@@ -11,9 +13,18 @@
 }
 
 .title-desc {
-  border: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
 }
 
 .title-status {
   border-right: 1px solid #d8d8d8;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
 }

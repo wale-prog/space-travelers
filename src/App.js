@@ -8,7 +8,6 @@ import MyProfile from './components/MyProfile';
 function App() {
   return (
     <div className="App">
-
       <Header />
       <Switch>
         <Route exact path="/missions">
@@ -17,10 +16,12 @@ function App() {
         <Route exact path="/profile">
           <MyProfile />
         </Route>
-        <Route path="/">
+        <Route exact path="/rockets">
           <Rockets />
         </Route>
-
+        <Route exact path="/">
+          <Rockets />
+        </Route>
       </Switch>
 
     </div>

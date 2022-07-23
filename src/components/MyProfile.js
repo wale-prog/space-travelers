@@ -21,7 +21,7 @@ const MyProfile = () => {
           ))}
         </div>
       </div>
-      <div className="main">
+      <div className="main-con">
         <h2>My Rockets</h2>
         <div style={style()}>
           {reservedRocket.map((item) => (

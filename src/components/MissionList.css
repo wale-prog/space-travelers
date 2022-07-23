@@ -11,11 +11,15 @@
   border: 1px solid #d8d8d8;
 }
 
+.main-container h3 {
+  margin-left: 4px;
+}
+
 .desc {
   margin-left: 14px;
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
-  padding: 2px;
+  padding: 4px;
 }
 
 .status {
@@ -27,6 +31,11 @@
   border-right: 1px solid #d8d8d8;
   color: #fff;
   border-radius: 4px;
+}
+
+.status-div {
+  display: flex;
+  justify-content: center;
 }
 
 .join-btn {

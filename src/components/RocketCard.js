@@ -40,7 +40,7 @@ const RocketCard = ({ data: rocket }) => {
         <h3>{rocketName}</h3>
         <div className="para">
           {rocket.reserved && <p className="reserved">Reserved</p>}
-          <p className="desc">{description}</p>
+          <p className="descr">{description}</p>
         </div>
         {!rocket.reserved ? (
           <button
