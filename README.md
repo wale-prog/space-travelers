@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Space Traveler's Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Project Description.
 
-## Available Scripts
+> "Space Traveler's Hub" is a simple website that allows a users to check through the variety of space rockets and missions made available by Space X and choose a combination of missions and rockets that catches their fancy.
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- JavaScript
+- React
+- Redux
+- HTML
+- CSS
+- Webpack
+- Git & Github
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
+No live demo yet
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+**This project is part of a training series to highlight the need for proper documentation, best practices, and writing clean codes with html, css, Javascript,React, and React-redux.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Have an IDE installed on your computer to be able to view the code locally.
+- Have a good working knowledge of Git and Github and well as React.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Open a command line terminal (Git bash preferrably) and navigate to a directory where you would like to save the work folder using cd.
+- Clone the repository with git clone https://github.com/wale-prog/space-travelers
+- To get the curent working tree, git fetch --all, then checkout to "dev" branch.
+- Finally, display the content of the ./public/index.html by starting the webpack dev server doing the following:
+  - navigate to the root directory with a command line terminal
+  - run 'npm start'
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install
 
-### `npm run eject`
+- IDE preferrably VScode
+- using command line terminal in the root directory install the following:
+  - node modules with npm install 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- For any individual who wishes to practice and master webpack usage, basic HTML,CSS and Javascript
+- For practice of HTML5, CSS and Javascript technologies.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+👤 **Wale Olapetan**
 
-## Learn More
+- GitHub: [@wale-prog](https://github.com/wale-prog)
+- Twitter: [@Wale_Petan](https://twitter.com/wale_Petan)
+- LinkedIn: [@walepetan](https://www.linkedin.com/in/walepetan/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Shahnawa Ali**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@shahnawaza75](https://github.com/shahnawaza75)
+- Twitter: [@shahnawaza75](https://twitter.comshahnawaza75)
+- LinkedIn: [@shahnawaza75](https://www.linkedin.com/in/shahnawaza75/)
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Shoutout to [Robertson](https://github.com/bobb-Rob) for being amazing.
+- Microverse.
 
-### Advanced Configuration
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.

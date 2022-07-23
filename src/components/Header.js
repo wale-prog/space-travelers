@@ -12,6 +12,7 @@ const Header = () => (
       </div>
       <Nav />
     </nav>
+    <div className="line" />
   </div>
 );
 

@@ -1,5 +1,6 @@
 .nav-items {
   display: flex;
+  margin-right: 15px;
 }
 
 .nav-items li {
@@ -9,6 +10,6 @@
 
 .nav-items li:last-child {
   border-left: 1px solid #000;
-  margin-right: 10px;
+  margin-right: 40px;
   padding-left: 12px;
 }
