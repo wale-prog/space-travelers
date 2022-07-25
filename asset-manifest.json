@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/space-travelers/static/css/main.9dadfa5a.css",
-    "main.js": "/space-travelers/static/js/main.f26e708d.js",
-    "static/js/787.4a08b3bd.chunk.js": "/space-travelers/static/js/787.4a08b3bd.chunk.js",
-    "static/media/planet.png": "/space-travelers/static/media/planet.3f6fb2742f28651730c0.png",
-    "index.html": "/space-travelers/index.html",
-    "main.9dadfa5a.css.map": "/space-travelers/static/css/main.9dadfa5a.css.map",
-    "main.f26e708d.js.map": "/space-travelers/static/js/main.f26e708d.js.map",
-    "787.4a08b3bd.chunk.js.map": "/space-travelers/static/js/787.4a08b3bd.chunk.js.map"
+    "main.css": "/space-travelers/rockets/static/css/main.9dadfa5a.css",
+    "main.js": "/space-travelers/rockets/static/js/main.998e5193.js",
+    "static/js/787.4a08b3bd.chunk.js": "/space-travelers/rockets/static/js/787.4a08b3bd.chunk.js",
+    "static/media/planet.png": "/space-travelers/rockets/static/media/planet.3f6fb2742f28651730c0.png",
+    "index.html": "/space-travelers/rockets/index.html",
+    "main.9dadfa5a.css.map": "/space-travelers/rockets/static/css/main.9dadfa5a.css.map",
+    "main.998e5193.js.map": "/space-travelers/rockets/static/js/main.998e5193.js.map",
+    "787.4a08b3bd.chunk.js.map": "/space-travelers/rockets/static/js/787.4a08b3bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9dadfa5a.css",
-    "static/js/main.f26e708d.js"
+    "static/js/main.998e5193.js"
   ]
 }
