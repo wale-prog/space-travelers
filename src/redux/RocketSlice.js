@@ -21,15 +21,9 @@ const rocketSlice = createSlice({
   name: 'Rocket',
   initialState,
   reducers: {
-    reserved(state, action) {
+    rocketOption(state, action) {
       const newstate = state.map((item) => {
-        if (item.id !== action.payload) return item; return { ...item, reserved: true };
-      });
-      return newstate;
-    },
-    cancelReserve(state, action) {
-      const newstate = state.map((item) => {
-        if (item.id !== action.payload) return item; return { ...item, reserved: false };
+        if (item.id !== action.payload) return item; return { ...item, reserved: !item.reserved };
       });
       return newstate;
     },

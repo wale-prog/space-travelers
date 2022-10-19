@@ -10,11 +10,7 @@ const RocketCard = ({ data: rocket }) => {
   } = rocket;
 
   const clickHandler = () => {
-    if (rocket.reserved) {
-      dispatch(rocketActions.cancelReserve(id));
-    } else {
-      dispatch(rocketActions.reserved(id));
-    }
+    dispatch(rocketActions.rocketOption(id));
   };
 
   const btnStyle = () => {
